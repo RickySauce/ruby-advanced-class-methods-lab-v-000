@@ -9,9 +9,9 @@ class Song
     song.name = name
     @@all << song
     song
-    binding.pry
-  end
 
+  end
+binding.pry
   def self.all
     @@all
   end
