@@ -52,7 +52,8 @@ class Song
     title = title.split("- ")
     @artist_name = title[0]
     name = title[1].split(".")
-    @name = name[0].flatten
+    @name = name[0].chop
+
     song = self.new
     song.name = @name
     song.artist_name = @artist_name
