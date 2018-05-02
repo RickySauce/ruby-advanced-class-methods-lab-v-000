@@ -51,9 +51,8 @@ class Song
   def self.new_from_filename(title)
     title = title.split("- ")
     @artist_name = title[0]
-    @name = title[1]
-    @name.sub(/#..+/, '.')
-
+    name = title[1].split(".")
+    @name = name[0]
     song = self.new
     song.name = @name
     song.artist_name = @artist_name
