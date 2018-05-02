@@ -3,7 +3,7 @@ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
-  binding.pry
+
   def self.create
     song = self.new
     @@all << song
@@ -47,5 +47,5 @@ class Song
   def self.alphabetical
 
   end
-
+  binding.pry
 end
