@@ -52,7 +52,7 @@ class Song
     title = title.split("- ")
     @artist_name = title[0]
     @name = title[1]
-    @name.gsub(/.*/, '.')
+    @name.sub(/.+/, '.')
 
     song = self.new
     song.name = @name
