@@ -44,4 +44,8 @@ class Song
     self.class.all << self
   end
 
+  def self.alphabetical
+    self.all.sort!
+  end
+
 end
