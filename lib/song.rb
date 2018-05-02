@@ -49,7 +49,7 @@ class Song
   end
 
   def self.new_from_filename(title)
-    title = title.split("- ")
+    title = title.split(" - ")
     @artist_name = title[0]
     name = title[1].split(".")
     @name = name[0]
