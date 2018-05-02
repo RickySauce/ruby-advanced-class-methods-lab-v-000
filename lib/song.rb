@@ -49,6 +49,16 @@ class Song
   end
 
   def self.new_from_filename(title)
+    title = title.split("-")
+    @artist = title[0]
+    @name = title[1]
+    @artist.join
+    @name.join
+    @name.chomp(".")
+    song = self.new
+    song.name = @name
+    song.artist = @artist
+    song
   end
 
 end
