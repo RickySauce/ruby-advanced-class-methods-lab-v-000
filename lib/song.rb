@@ -33,6 +33,7 @@ class Song
       return self.find_by_name(name)
       unless nil
        self.create_by_name(name)
+     end
     end
 
   def self.all
